@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+aside{
+    grid-area: aside;
+    height: 80vh;
+    width: 20vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .footer {
+      font-size: 20rem;
+    }
+  }
