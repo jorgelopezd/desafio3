@@ -2,15 +2,47 @@
     margin: 0;
     padding: 0;
 }
-aside{
+nav{
     grid-area: aside;
     height: 80vh;
     width: 20vw;
-    background-color: aquamarine;
+    background-color: #00579c;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.menuburge{
+  justify-content: space-around
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr);
+}
+.imgcard img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.infocard{
+  display: flex;
+  justify-content: center;
+}
+.button-card{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+button{
+  background-color: #00579c;
+  color: white;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-size:x-large
+}
+p{
+  font-size: 30px;
+}
 footer{
     background-color: aquamarine;
     height: 20vh;
@@ -22,14 +54,38 @@ footer{
 }
 
 
-@media screen and (max-width: 480px) {
-    .logo {
+@media screen and (max-width: 564px) {
+    .carlogo {
+      /* display: none; */
+    }
+    ul{
       display: none;
+    }
+    nav{
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      
+    }
+    .menuburge{
+      padding: 20px;
+      
+    }
+    footer{
+      height: 100%;
+      width: 100%;
+      align-items: center;
+    }
+    .grid-container{
+      grid-template-columns: 100%;
     }
   }
   
   @media screen and (min-width: 1024px) {
     .footer {
       font-size: 20rem;
+    }
+    .menuburge{
+      display: none;
     }
   }
