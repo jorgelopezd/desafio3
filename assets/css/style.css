@@ -99,6 +99,13 @@ footer{
       width: 500px;
 
     }
+    .pagination{
+      display: flex;
+    }
+    .pagination-container ul{
+      display: flex;
+      flex-direction: row;
+    }
     footer{
       height: 100%;
       width: 100%;
