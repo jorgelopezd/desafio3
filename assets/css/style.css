@@ -11,6 +11,17 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
+.carlogo{
+  display: flex;
+  align-items: center;
+}
+.carlogo p{
+  color: white;
+}
+.carlogo img{
+  width: 50px;
+  height: 50px;
+}
 .menuburge{
   justify-content: space-around
 }
@@ -44,14 +55,16 @@ p{
   font-size: 30px;
 }
 footer{
-    background-color: aquamarine;
+    background-color: #012f6b;
     height: 20vh;
     width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
+
 
 
 @media screen and (max-width: 564px) {
