@@ -29,6 +29,16 @@ nav{
   display: grid;
   grid-template-columns: repeat( 4, 1fr);
 }
+aside{
+  background-color:#e2e2e2 ;
+  display: flex;
+  flex-direction: column;
+
+
+}
+.form_control{
+  border-radius: 5px;
+}
 .imgcard img{
   object-fit: contain;
   height: 100%;
@@ -68,9 +78,6 @@ footer{
 
 
 @media screen and (max-width: 564px) {
-    .carlogo {
-      /* display: none; */
-    }
     ul{
       display: none;
     }
@@ -78,11 +85,19 @@ footer{
       height: 100%;
       width: 100%;
       align-items: center;
-      
     }
     .menuburge{
       padding: 20px;
-      
+    }
+    aside{
+      height: 80px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .form_control{
+      width: 500px;
+
     }
     footer{
       height: 100%;
