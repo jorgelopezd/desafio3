@@ -145,6 +145,7 @@ footer{
       display: grid;
       grid-area:car-container ;
       height: 80vh;
+      width: 80vw;
       grid-template-columns: repeat(4,1fr);
       grid-template-rows: repeat(2,1fr);
       gap: 20px;
@@ -152,6 +153,7 @@ footer{
     aside{
       align-items: center;
       grid-area: aside;
+      justify-content: center;
     }
     .pagination{
       grid-area: pagination;
@@ -171,12 +173,16 @@ footer{
       text-decoration: none;
       justify-content: center;
       gap: 30px;
+      width: 80vw;
     }
     .page-item{
       font-size: 40px;
       list-style: none;
       border: solid 1px black;
       
+    }
+    .form_control{
+      width: 60vw;
     }
     .menu{
       display: flex;
