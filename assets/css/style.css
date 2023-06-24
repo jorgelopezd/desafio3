@@ -121,11 +121,9 @@ footer{
   @media screen and (min-width: 565px) {
     body{
       display: grid;
-      /* grid-template-columns: 1fr 1fr; */
-      /* grid-template-rows: 1fr 1fr; */
       grid-template-areas: 
-      "navbar car-container"
-      "footer car-container"
+      "navbar grid-container"
+      "footer grid-container"
       ;
     }
     footer {
@@ -145,7 +143,7 @@ footer{
     }
     .car-container{
       display: grid;
-      grid-area:"car-container" ;
+      grid-area:car-container ;
       height: 80vh;
       grid-template-columns: repeat(4,1fr);
       grid-template-rows: repeat(2,1fr);
@@ -153,10 +151,20 @@ footer{
     }
     aside{
       align-items: center;
+      grid-area: aside;
+    }
+    .pagination{
+      grid-area: pagination;
     }
     .grid-container{
-
-      grid-template-columns: repeat(1,1fr);
+      grid-area: grid-container;
+      grid-template-columns: 100%;
+      grid-template-rows: 10% 80% 10%;
+      grid-template-areas:  
+      "aside"
+      "car-container"
+      "pagination"
+      ;
     }
     .pagination-container{
       display: flex;
